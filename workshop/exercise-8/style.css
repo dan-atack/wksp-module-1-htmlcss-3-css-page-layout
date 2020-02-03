@@ -7,10 +7,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-transform: uppercase;
+  display: flex;
 }
 
 .fast {
+  transform: translate(-50px);
+  transition: 500ms;
+  animation: ease-in-out;
+  animation-duration: 1s;
 }
 
 .cool {
+  height: 60px;
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: blue;
+  border-style: none;
+  color: white;
+  box-shadow: 3px 3px 4px 4px #999999;
+}
+
+.cool:hover {
+  transform: scale(1.5);
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.cool:active {
+  transform: scale(0.8) rotate(359deg);
+  transition: 1.5s;
+  border-style: none;
 }

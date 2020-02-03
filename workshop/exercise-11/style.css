@@ -1,22 +1,51 @@
-.header {
+body {
+  border: 0;
+}
 
+table {
+  display: grid;
+}
+
+a {
+  
+}
+
+.header {
+  text-align: center;
 }
 
 .facts {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #999991;
+  display:grid;
+  width: 100vw;
+}
 
+tbody {
+  width: 100%;
 }
 
 tr {
+  position: relative;
+  width: 100%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  display: flex;
+}
 
+tr:nth-child(even) {
+  background-color: lightslategrey;
 }
 
 th {
-
+  display:inline-flex;
+  align-items: stretch;
+  
 }
 
-td,
-th {
-
+td, th {
+  width: 25%;
 }
 
 h3 {
@@ -25,9 +54,19 @@ h3 {
 
 /* Using CSS grid */
 .links {
+  width: 100vw;
+  padding-left: 0px;
 }
 
-.links > li {
+.links li {
+  list-style-type: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  height: 25px;
+  width: 24.5%;
+  justify-content: center;
 }
 
 /* 
@@ -46,5 +85,11 @@ h3 {
 */
 
 .links a {
-
+  padding-top: 3px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: block;
+  background-color: skyblue;
+  width: 100%;
 }
