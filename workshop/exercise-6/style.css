@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+.item {
+    justify-self: center;
+    grid-column-start: 2;
+    text-align: center;
+}
+
+.top {
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    grid-row-start: 1;
+}
+
+.bold {
+    grid-row-start: 2;
+}
+
+.offer {
+    grid-row-start: 3;
+}
+
+.store {
+    grid-row-start: 4;
+}
+
+a:hover {
+    color: pink;
+    transition: 0.2s;
+}
+
+a::after {
+    content: "  >"
+}

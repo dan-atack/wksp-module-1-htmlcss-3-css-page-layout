@@ -2,25 +2,51 @@ body {
     margin: 0;
 }
 
+h1 {
+    text-align: center;
+}
+
 .container {
     display: grid;
+    grid-template-areas: "nav nav"
+                         "aside main"
+                         "aside footer";
+    grid-template-rows: 10% 80% 10%;
+    grid-template-columns: 25% 75%;
     min-height: 100vh;
 }
 
 .nav {
-    height: 50px;
+    grid-area: nav;
     background-color: rebeccapurple;
 }
 
 .aside {
+    grid-area: aside;
     background-color: forestgreen;
 }
 
 .main {
-
+    grid-area: main;
 }
 
 .footer {
+    grid-area: footer;
+    position: relative;
     height: 100px;
     background-color: midnightblue;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        grid-template-areas: "nav nav"
+                             "main main"
+                             "footer footer";
+    }
+    .aside {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+    }
 }

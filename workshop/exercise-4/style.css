@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body {
+    margin: 0;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    background-color: #313633;
+    display: grid;
+    grid-template-columns: 25% 10% 10% 10% 10% 10% 25%;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 50%;
+    transition: 0.2s;
+}
+
+.item:first-child {
+    grid-column-start: 2;
+}

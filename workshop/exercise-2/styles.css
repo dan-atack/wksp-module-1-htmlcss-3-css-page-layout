@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/css?family=poppins);
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+div.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 7.5% 85% 7.5%;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+.header {
+    color: white;
+    background-color: darkslategray;
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    color: white;
+    background-color: darkslategray;
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
